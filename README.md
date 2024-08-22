@@ -44,3 +44,5 @@ The application is built using a combination of modern technologies:
 ```bash
 git clone https://github.com/yourusername/ai-student-assistant-chatbox.git
 cd ai-student-assistant-chatbox
+
+HI THERE
