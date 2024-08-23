@@ -29,7 +29,7 @@ The Fitness Posture Corrector and Nutrition Guide application aims to:
 ## Technology Stack
 
 - **Frontend**: React Native (for mobile apps) / React.js (for web applications)
-- **Backend**: Node.js with Express.js
+- **Backend**: Python with Flask
 - **Database**: SQL (e.g., PostgreSQL, MySQL)
 - **Posture Correction**: OpenCV, TensorFlow, PyTorch
 - **Chatbot**: Rasa, Dialogflow, or Microsoft Bot Framework
@@ -42,9 +42,11 @@ To get started with the project, follow these steps:
 
 ### Prerequisites
 
-- Node.js (>= 14.x)
+- Python (>= 3.8)
+- Flask
 - SQL Database (e.g., PostgreSQL or MySQL)
-- Python (>= 3.8) with required libraries (`tensorflow`, `opencv-python`, etc.)
+- Node.js (>= 14.x) for frontend
+- Python libraries: `flask`, `flask_sqlalchemy`, `opencv-python`, `tensorflow` (install using `pip`)
 
 ### Setup
 
