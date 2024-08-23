@@ -1,6 +1,6 @@
-# Fitness Posture Corrector and Nutrition Guide
+# AI FITNESS TRAINER
 
-Welcome to the **Fitness Posture Corrector and Nutrition Guide** project! This application integrates real-time posture correction using camera feedback, personalized nutrition guidance, and an interactive chatbot to help users improve their fitness and nutrition.
+Welcome to the **AI FITNESS TRAINER** project! This application integrates real-time posture correction using camera feedback, personalized nutrition guidance, and an interactive chatbot to help users improve their fitness and nutrition.
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
