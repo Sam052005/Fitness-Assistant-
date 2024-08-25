@@ -1,0 +1,223 @@
+.SIGN-UP {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.SIGN-UP .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 360px;
+  height: 800px;
+  position: relative;
+}
+
+.SIGN-UP .overlap-group {
+  position: absolute;
+  width: 360px;
+  height: 800px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/istockphoto-1225752911-612x612-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.SIGN-UP .rectangle {
+  position: absolute;
+  width: 340px;
+  height: 564px;
+  top: 134px;
+  left: 10px;
+  background-color: #d9d9d980;
+}
+
+.SIGN-UP .password-icon-png {
+  position: absolute;
+  width: 19px;
+  height: 21px;
+  top: 441px;
+  left: 39px;
+  object-fit: cover;
+}
+
+.SIGN-UP .rectangle-2 {
+  position: absolute;
+  width: 312px;
+  height: 50px;
+  top: 429px;
+  left: 28px;
+  background-color: #8b8eae;
+  opacity: 0.5;
+}
+
+.SIGN-UP .text-wrapper {
+  position: absolute;
+  width: 200px;
+  top: 434px;
+  left: 80px;
+  font-family: "Inknut Antiqua", Helvetica;
+  font-weight: 400;
+  color: #00000054;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.SIGN-UP .text-wrapper-2 {
+  position: absolute;
+  width: 98px;
+  top: 389px;
+  left: 39px;
+  font-family: "Inknut Antiqua", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.SIGN-UP .rectangle-3 {
+  position: absolute;
+  width: 312px;
+  height: 43px;
+  top: 345px;
+  left: 28px;
+  background-color: #8b8dae;
+  opacity: 0.5;
+}
+
+.SIGN-UP .text-wrapper-3 {
+  position: absolute;
+  top: 309px;
+  left: 45px;
+  font-family: "Inknut Antiqua", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.SIGN-UP .text-wrapper-4 {
+  position: absolute;
+  width: 149px;
+  top: 344px;
+  left: 87px;
+  opacity: 0.4;
+  font-family: "Inknut Antiqua", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.SIGN-UP .gmail-PNG {
+  position: absolute;
+  width: 25px;
+  height: 23px;
+  top: 355px;
+  left: 45px;
+  object-fit: cover;
+}
+
+.SIGN-UP .text-wrapper-5 {
+  position: absolute;
+  top: 153px;
+  left: 80px;
+  font-family: "Inknut Antiqua", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.SIGN-UP .rectangle-4 {
+  position: absolute;
+  width: 150px;
+  height: 43px;
+  top: 255px;
+  left: 28px;
+  background-color: #8b8eae;
+  opacity: 0.5;
+}
+
+.SIGN-UP .rectangle-5 {
+  position: absolute;
+  width: 120px;
+  height: 43px;
+  top: 257px;
+  left: 220px;
+  background-color: #8b8eae;
+  opacity: 0.5;
+}
+
+.SIGN-UP .text-wrapper-6 {
+  position: absolute;
+  top: 220px;
+  left: 45px;
+  font-family: "Inknut Antiqua", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.SIGN-UP .text-wrapper-7 {
+  position: absolute;
+  top: 226px;
+  left: 238px;
+  font-family: "Inknut Antiqua", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.SIGN-UP .rectangle-6 {
+  position: absolute;
+  width: 125px;
+  height: 39px;
+  top: 526px;
+  left: 103px;
+  background-color: #000000;
+  border-radius: 30px;
+}
+
+.SIGN-UP .text {
+  position: absolute;
+  top: 391px;
+  left: 162px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.SIGN-UP .text-wrapper-8 {
+  position: absolute;
+  top: 525px;
+  left: 137px;
+  font-family: "Inknut Antiqua", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.SIGN-UP .frame {
+  position: absolute;
+  width: 266px;
+  height: 475px;
+  top: 835px;
+  left: 103px;
+}

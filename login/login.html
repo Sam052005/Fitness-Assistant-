@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <!-- White "Login" text at the top of the box -->
+          <div class="login-title">LOGIN</div>
+          <div class="rectangle"></div>
+          <div class="text-wrapper">WELCOME</div>
+          <div class="div"></div>
+          
+          <!-- Email Input Field -->
+          <img class="gmail-PNG" src="img/gmail-png-transparent-image.png" alt="null" />
+          <input type="email" id="email" class="input-email" placeholder="Enter your Email" required />
+
+          <!-- Password Input Field -->
+          <img class="password-icon-png" src="img/password-icon-png-4.png" alt="null" />
+          <input type="password" id="password" class="input-password" placeholder="Enter your Password" required />
+
+          <!-- Login Button -->
+          <div class="rectangle-3" id="loginButton">
+            <div class="text-wrapper-4">Login</div>
+          </div>
+
+          <div class="text-wrapper-5">Don’t have any account?</div>
+          <!-- Link the "Sign up" text to signup.html -->
+          <a href="../signup/signup.html" class="text-wrapper-6">Sign up</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript to handle the login functionality -->
+    <script>
+      document.getElementById('loginButton').addEventListener('click', function() {
+        // Get the email and password values
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Validate the inputs
+        if (email && password) {
+          // Redirect to camera.html if inputs are valid
+          window.location.href = '../camera/camera.html';
+        } else {
+          alert('Please enter both email and password.');
+        }
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,139 @@
+.login {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.login .overlap-group-wrapper {
+  background-color: #ffffff;
+  width: 360px;
+  height: 800px;
+}
+
+.login .overlap-group {
+  position: relative;
+  height: 800px;
+  background-image: url(./img/istockphoto-1225752911-612x612-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.login .rectangle {
+  position: absolute;
+  width: 233px;
+  height: 404px;
+  top: 245px;
+  left: 63px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+
+.login .text-wrapper {
+  position: absolute;
+  width: 156px;
+  top: 244px;
+  left: 94px;
+  font-family: "Inknut Antiqua", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.login .input-email,
+.login .input-password {
+  position: absolute;
+  width: 215px;
+  height: 32px;
+  padding-left: 30px;
+  border: none;
+  border-radius: 30px;
+  opacity: 0.5;
+}
+
+.login .input-email {
+  top: 356px;
+  left: 71px;
+  background-color: #8b8dae;
+}
+
+.login .input-password {
+  top: 400px;
+  left: 71px;
+  background-color: #8b8eae;
+}
+
+.login .gmail-PNG {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 365px;
+  left: 78px;
+  object-fit: cover;
+}
+
+.login .password-icon-png {
+  position: absolute;
+  width: 19px;
+  height: 21px;
+  top: 406px;
+  left: 78px;
+  object-fit: cover;
+}
+
+.login .rectangle-3 {
+  position: absolute;
+  width: 95px;
+  height: 30px;
+  top: 454px;
+  left: 119px;
+  background-color: #292323;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.login .text-wrapper-4 {
+  position: absolute;
+  width: 66px;
+  top: 453px;
+  left: 147px;
+  font-family: "Inknut Antiqua", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+}
+
+.login .text-wrapper-5 {
+  position: absolute;
+  width: 215px;
+  top: 495px;
+  left: 86px;
+  font-family: "Inknut Antiqua", Helvetica;
+  font-weight: 400;
+  color: #272729;
+  font-size: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.login .text-wrapper-6 {
+  position: absolute;
+  width: 54px;
+  top: 495px;
+  left: 201px;
+  font-family: "Inknut Antiqua", Helvetica;
+  font-weight: 400;
+  color: #28282a;
+  font-size: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+

@@ -1,0 +1,120 @@
+.LANDING-PAGE {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.LANDING-PAGE .div {
+  background-color: #ffffff;
+  width: 360px;
+  height: 800px;
+  position: relative;
+}
+
+.LANDING-PAGE .overlap-group {
+  position: absolute;
+  width: 360px;
+  height: 673px;
+  top: 0;
+  left: 0;
+}
+
+.LANDING-PAGE .fit {
+  position: absolute;
+  width: 268px;
+  height: 213px;
+  top: 0;
+  left: 92px;
+  object-fit: cover;
+}
+
+.LANDING-PAGE .whatsapp-image {
+  position: absolute;
+  width: 202px;
+  height: 210px;
+  top: 276px;
+  left: 66px;
+  object-fit: cover;
+}
+
+.LANDING-PAGE .wp {
+  position: absolute;
+  width: 116px;
+  height: 195px;
+  top: 416px;
+  left: 244px;
+  object-fit: cover;
+}
+
+.LANDING-PAGE .img {
+  width: 116px;
+  top: 158px;
+  left: 244px;
+  position: absolute;
+  height: 195px;
+  object-fit: cover;
+}
+
+.LANDING-PAGE .whatsapp-image-2 {
+  width: 106px;
+  top: 435px;
+  left: 0;
+  position: absolute;
+  height: 195px;
+  object-fit: cover;
+}
+
+.LANDING-PAGE .img-2 {
+  position: absolute;
+  width: 92px;
+  height: 195px;
+  top: 158px;
+  left: 0;
+  object-fit: cover;
+}
+
+.LANDING-PAGE .text-wrapper {
+  position: absolute;
+  width: 304px;
+  top: 610px;
+  left: 47px;
+  font-family: "Inknut Antiqua", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-PAGE .overlap {
+  position: absolute;
+  width: 241px;
+  height: 54px;
+  top: 712px;
+  left: 53px;
+}
+
+.LANDING-PAGE .rectangle {
+  position: absolute;
+  width: 241px;
+  height: 41px;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  border-radius: 60px;
+}
+
+.LANDING-PAGE .text-wrapper-2 {
+  position: absolute;
+  width: 168px;
+  top: 6px;
+  left: 47px;
+  font-family: "Jost", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}

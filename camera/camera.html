@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="camera-page">
+      <div class="overlap-wrapper">
+        <div class="overlap">
+          <div class="buttons">
+            <div class="overlap-group">
+              <div class="rectangle"></div>
+              <div class="div">
+                <!-- Video element to display the camera feed -->
+                <video id="cameraFeed" autoplay></video>
+              </div>
+            </div>
+            <div class="rectangle-2"></div>
+          </div>
+          <img class="icons" src="img/icons.png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript to access the camera and display the feed -->
+    <script>
+      // Access the video element
+      const video = document.getElementById('cameraFeed');
+
+      // Request access to the user's camera
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function(stream) {
+          // Set the video source to the camera stream
+          video.srcObject = stream;
+        })
+        .catch(function(error) {
+          console.error('Error accessing the camera: ', error);
+          alert('Unable to access the camera. Please ensure you have granted the necessary permissions.');
+        });
+    </script>
+  </body>
+</html>
+
