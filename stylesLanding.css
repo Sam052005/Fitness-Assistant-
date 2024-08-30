@@ -1,0 +1,106 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f; /* Dark background */
+    color: #ffffff; /* White text color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0f0f0f;
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff5656; /* Red hover effect */
+}
+
+header .register-button {
+    background-color: #ffffff;
+    color: #ff5656;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .register-button:hover {
+    background-color: #ff5656;
+    color: #ffffff;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+    background-color: #0f0f0f;
+    background-image: linear-gradient(to right, rgba(15, 15, 15, 0.9) 50%, rgba(255, 86, 86, 0.9) 50%);
+    color: #ffffff;
+}
+
+.main .main-text {
+    max-width: 600px;
+}
+
+.main .main-text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.main .main-text h1 span {
+    color: #ff5656; /* Red color for emphasis */
+}
+
+.main .main-text p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.main .get-started {
+    background-color: #ff5656;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.main .get-started:hover {
+    background-color: #ff4343;
+    transform: scale(1.05);
+}
+
+.main .main-image img {
+    max-width: 100%;
+    height: auto;
+}
+
