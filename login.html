@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOX Icons ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/stylesLogin.css">
+
+        <title></title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="login__content"> 
+            <img src="assets/img/gym-login.jpg" alt="login" class="login__img">
+
+            <form action="" class="login__form">
+                <div>
+                <h1 class="login__title">
+                <span>Welcome </span>  Back
+                </h1>
+                <p class="login__description">
+                Welcome! Please login to continue.
+                </p>
+                </div>
+                <div>
+                    <div class="login__inputs">
+                        <div>
+                            <label for="" class="login__label">Email</label>
+                            <div class="input">
+                                <i class="bx bx-envelope input__lock"></i>
+                                <input type="email" placeholder="Enter your email address" required class="input__password input__email">
+                            </div>
+                            
+                        </div>
+
+                        <div>
+                            <label for="" class="login__label">Password</label>
+
+                            <div class="input">
+                                <div class="input__overlay" id="input-overlay"></div>
+                                <i class="bx bx-lock-alt input__lock"></i>
+                                <input type="password" placeholder="Enter your password" required class="input__password" id="input-pass">
+                                <i class="bx bx-hide input__icon" id="input-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <div class="login__buttons">
+                        <button class="login__button">Log In</button>
+                        <button class="login__button login__button-ghost" onclick="window.location.href = 'signup1.html' ;" >Sign Up</button>
+                    </div>
+
+                    <a href="" class="login__forget">Forgot Password</a>
+                </div>
+            </form>
+            </div>
+            </div>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/signs.js"></script>
+    </body>
+</html>

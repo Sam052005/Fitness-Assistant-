@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/stylesSignup2.css">
+
+        <!--=============== BOX Icons ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+        <!--=============== script ===============--> 
+
+        <title></title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="login__content"> 
+                <img src="assets/img/gym-login2.jpg" alt="login" class="login__img">
+    
+                <form action="" class="login__form">
+                    <div>
+                    <p class="login__description">
+                    Please fill in all fields.
+                    </p>
+                    </div>
+                    <div>
+                        <div class="login__inputs">
+                            <div>
+                                <label for="" class="login__label">Select your Gender:</label>
+                                <div class="input">
+                                    <i class="bx bx-male-female input__lock"></i>
+                                    <select required class="input__password input__email" name="gender" id="gender">
+                                        <option value="option1">Male</option>
+                                        <option value="option2">female</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="" class="login__label">Height:</label>
+                                <div class="input">
+                                    <i class="bx bx-bone input__lock"></i>
+                                    <input type="number" placeholder="Enter your Height (Cm)" required class="input__password input__email" id="height">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="" class="login__label">weight:</label>
+                                <div class="input">
+                                    <i class="bx bx-cookie input__lock"></i>
+                                    <input type="number" placeholder="Enter your weight (Kg)" required class="input__password input__email" id="weight">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="" class="login__label">Your Activity level:</label>
+                                <div class="input">
+                                    <i class="bx bx-pulse input__lock"></i>
+                                    <select required class="input__password input__email" name="Activity" id="activity">
+                                        <option value="option1">Not very Active(most time sitting)</option>
+                                        <option value="option2">Lightly Active(most time on your feet)</option>
+                                        <option value="option3">Active(least time doing physical activity)</option>
+                                        <option value="option4">Very Active(most time doing physical activity)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="" class="login__label">Your Exercise level:</label>
+                                <div class="input">
+                                    <i class="bx bx-dumbbell input__lock"></i>
+                                    <select required class="input__password input__email" name="Activity" id="exercise">
+                                        <option value="option1">Beginner</option>
+                                        <option value="option2">Intermediate</option>
+                                        <option value="option3">Advanced</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="" class="login__label">Body fat percentage:</label>
+                                <div class="input">
+                                    <i class="bx bxs-capsule input__lock"></i>
+                                    <input type="number" placeholder="Enter your body fat percentage (%)" required class="input__password input__email" id="fat">
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="login__buttons">
+                            <button class="login__button" onclick="window.location.href = '/signup3.html' ;" >Continue</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/signs.js"></script>
+    </body>
+</html>
