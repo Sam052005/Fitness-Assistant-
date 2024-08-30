@@ -1,0 +1,1111 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/stylesWorkout.css">
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICON ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+        <title>FitnessFuelX</title>
+    </head>
+    <body>
+    
+
+    <!--=============== NAVBAR ===============-->
+        <nav class="nav" id="nav">
+            <div class="nav__menu container" id="nav-menu">
+                <div class="nav__shape"></div>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+                
+                <div class="nav__data">
+                    <div class="nav__mask">
+                        
+                        <img src="assets/img/perfil.png" alt="" class="nav__img">
+                    </div>
+
+                    <span class="nav__greeting">Hi,</span>
+                    <h1 class="nav__name"><p class="user__name">Abdelrahman <br> Mahmoud</p></h1>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active-link">
+                            <i class="ri-home-4-line"></i> Home 
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Profile.html" class="nav__link">
+                            <i class="ri-user-line"></i> Profile
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="workout.html" class="nav__link">
+                            <i class='bx bx-dumbbell'></i> Workout 
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="nutrition.html" class="nav__link">
+                            <i class='bx bx-bowl-hot'></i> Nutrition
+                        </a>
+                    </li>
+                </ul>
+                <div class="logout">
+                    <button class="logout__button">Logout</button>
+                </div>
+            </div>
+        </nav>
+
+        <!--=============== MAIN ===============-->
+        <main class="main" id="main">
+            <!--=============== HEADER ===============-->
+            <header class="header" id="header">
+                <nav class="header__nav container">
+                    <a href="#" class="header__logo">
+                        <img src="assets/img/favicon.png" alt="logo"> 
+                        <p>FitnessFuelX</p>
+                    </a>
+                    
+                    <div class="containner">
+                        <form action="" class="search" id="search-bar">
+                            <input type="search" class="search__input" placeholder="Search...">
+    
+                            <div class="search__button" id="search-button">
+                                <i class="ri-search-2-line search__icon"></i>
+                                <i class="ri-close-line search__close"></i>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="icons">
+                        
+                    <a href="#">
+                        <i class='bx bxs-bell notification'></i>
+                        <i style="display: none;" class='bx bxs-bell-ring notification notification__ring'></i>
+                        <div class="notifications-container" style="display: none;">
+                            <ul>
+                                <li><p class="user__name">Amr Khaled</p> Started following you.</li>
+                                <div class="thinking__line"></div>
+                                <li><p class="user__name">Fouad Mahmoud</p> Started following you.</li>
+                                <div class="thinking__line"></div>
+                                <li><p class="user__name">Omar Hesham</p> Started following you.</li>
+                                <div class="thinking__line"></div>
+                              </ul>
+                        </div>
+                    </a>
+                    
+    
+                    <!-- Toggle button -->
+                    <div class="header__toggle" id="header-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
+                    </div>
+                </nav>
+            </header>
+            <!--=============== HOME ===============-->
+            <section class="section section__height container" id="home">
+                <!-- here i will put post and create post  -->
+                <header class="days-header"> 
+                    <div class="days-table">
+                        Days Schedule
+                    </div>
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <nav class="nav-days">
+                        <ul>
+                          <li>
+                            <a href="#tranding-saturday" class="nav__link active">Saturday</a>
+                          </li>
+                          <li>
+                            <a href="#tranding-sunday" class="nav__link">Sunday</a>
+                          </li>
+                          <li>
+                            <a href="#tranding-monday"class="nav__link">Monday</a>
+                          </li>
+                          <li>
+                            <a href="#tranding-tuesday" class="nav__link">Tuesday</a>
+                          </li>
+                          <li>
+                            <a href="#tranding-wednesday" class="nav__link">Wednesday</a>
+                          </li>
+                          <li>
+                            <a href="#tranding-thursday" class="nav__link">Thursday</a>
+                          </li>
+                          <li>
+                            <a href="#tranding-friday" class="nav__link">Friday</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    
+                    </nav>
+                </header>
+
+                <!-- swipper  -->
+                <section id="tranding-saturday" class="tranding-section">
+                    <section id="tranding">
+                        <div class="containnner">
+                          <div class="swiper tranding-slider">
+                            <div class="swiper-wrapper">
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-7.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                            </div>
+                  
+                            <div class="tranding-slider-control">
+                              <div class="swiper-button-prev slider-arrow">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-button-next slider-arrow">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                            </div>
+                  
+                          </div>
+                        </div>
+                      </section>
+                  </section>
+                  
+                  <section id="tranding-sunday" class="tranding-section">
+                    <section id="tranding">
+                        <div class="containnner">
+                          <div class="swiper tranding-slider">
+                            <div class="swiper-wrapper">
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-7.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                            </div>
+                  
+                            <div class="tranding-slider-control">
+                              <div class="swiper-button-prev slider-arrow">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-button-next slider-arrow">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                            </div>
+                  
+                          </div>
+                        </div>
+                      </section>
+                  </section>
+                  
+                  <section id="tranding-monday" class="tranding-section">
+                    <section id="tranding">
+                        <div class="containnner">
+                          <div class="swiper tranding-slider">
+                            <div class="swiper-wrapper">
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-7.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                            </div>
+                  
+                            <div class="tranding-slider-control">
+                              <div class="swiper-button-prev slider-arrow">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-button-next slider-arrow">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                            </div>
+                  
+                          </div>
+                        </div>
+                      </section>
+                  </section>
+                  
+                  <section id="tranding-tuesday" class="tranding-section">
+                    <section id="tranding">
+                        <div class="containnner">
+                          <div class="swiper tranding-slider">
+                            <div class="swiper-wrapper">
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-7.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                            </div>
+                  
+                            <div class="tranding-slider-control">
+                              <div class="swiper-button-prev slider-arrow">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-button-next slider-arrow">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                            </div>
+                  
+                          </div>
+                        </div>
+                      </section>
+                  </section>
+
+                  <section id="tranding-wednesday" class="tranding-section">
+                    <section id="tranding">
+                        <div class="containnner">
+                          <div class="swiper tranding-slider">
+                            <div class="swiper-wrapper">
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-7.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                            </div>
+                  
+                            <div class="tranding-slider-control">
+                              <div class="swiper-button-prev slider-arrow">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-button-next slider-arrow">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                            </div>
+                  
+                          </div>
+                        </div>
+                      </section>
+                  </section>
+
+                  <section id="tranding-thursday" class="tranding-section">
+                    <section id="tranding">
+                        <div class="containnner">
+                          <div class="swiper tranding-slider">
+                            <div class="swiper-wrapper">
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-7.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                            </div>
+                  
+                            <div class="tranding-slider-control">
+                              <div class="swiper-button-prev slider-arrow">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-button-next slider-arrow">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                            </div>
+                  
+                          </div>
+                        </div>
+                      </section>
+                  </section>
+
+                  <section id="tranding-friday" class="tranding-section">
+                    <section id="tranding">
+                        <div class="containnner">
+                          <div class="swiper tranding-slider">
+                            <div class="swiper-wrapper">
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-1.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <img src="assets/img/tranding-food-7.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Special Pizza
+                                    </h2>
+                                    <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates, debitis magni maiores ex doloremque quibusdam.
+                                        Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam at. Id.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                            </div>
+                  
+                            <div class="tranding-slider-control">
+                              <div class="swiper-button-prev slider-arrow">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-button-next slider-arrow">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                            </div>
+                  
+                          </div>
+                        </div>
+                      </section>
+                  </section>
+            
+
+            </section>
+        </main>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/workout&nutrition.js"></script>
+    
+    </body>
+</html>
